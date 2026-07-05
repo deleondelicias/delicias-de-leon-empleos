@@ -21,7 +21,7 @@ const VACANTES = [
     requisitos: "Disponibilidad de horario indicado.",
   },
   {
-    puesto: "Venta y Servicio al Cliente (Turno Tarde)",
+    puesto: "Venta y Servicio al Cliente (Turno Tarde - 5 horas)",
     tipo: "Operativo",
     ubicacion: "Punto de venta",
     descripcion:
@@ -29,7 +29,7 @@ const VACANTES = [
     requisitos: "Disponibilidad de horario indicado, buena actitud de servicio al cliente.",
   },
   {
-    puesto: "Cocina y Empanadas (Turno Tarde)",
+    puesto: "Cocina y Empanadas (Turno Tarde - 5 horas)",
     tipo: "Operativo",
     ubicacion: "Local de producción",
     descripcion:
@@ -37,7 +37,7 @@ const VACANTES = [
     requisitos: "Disponibilidad de horario indicado.",
   },
   {
-    puesto: "Repartidor en Motocicleta (Delivery)",
+    puesto: "Repartidor en Motocicleta (Delivery - 5 horas)",
     tipo: "Operativo",
     ubicacion: "Punto de venta",
     descripcion:
