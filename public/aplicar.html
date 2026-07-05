@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aplicar a una vacante | Delicias de León</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header class="sitio">
+    <img src="img/logo.png" alt="Delicias de León" />
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="vacantes.html">Vacantes</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Aplicar a una vacante</h1>
+    <p id="puesto-info" class="estado-msg" style="display:none;"></p>
+
+    <!--
+      Formulario procesado por Netlify Forms (sin backend propio).
+      Netlify detecta este formulario en el build por su atributo name + data-netlify.
+      Cada envío dispara la función netlify/functions/submission-created.js,
+      que crea el registro en Airtable.
+    -->
+    <form
+      class="aplicacion"
+      name="aplicacion"
+      method="POST"
+      action="/gracias.html"
+      enctype="multipart/form-data"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="aplicacion" />
+      <p style="display:none;">
+        <label>No llenar este campo: <input name="bot-field" /></label>
+      </p>
+
+      <div>
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" required />
+      </div>
+
+      <div>
+        <label for="telefono">Teléfono *</label>
+        <input type="tel" id="telefono" name="telefono" required />
+      </div>
+
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" />
+      </div>
+
+      <div>
+        <label for="puesto">Puesto al que aplica *</label>
+        <input type="text" id="puesto" name="puesto" required />
+      </div>
+
+      <div>
+        <label for="disponibilidad">Disponibilidad de horario *</label>
+        <select id="disponibilidad" name="disponibilidad" required>
+          <option value="">Selecciona una opción</option>
+          <option value="Tiempo completo">Tiempo completo</option>
+          <option value="Medio tiempo">Medio tiempo</option>
+          <option value="Fines de semana">Fines de semana</option>
+          <option value="Flexible">Flexible</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="experiencia">Cuéntanos tu experiencia</label>
+        <textarea id="experiencia" name="experiencia" placeholder="Trabajos anteriores, tiempo de experiencia, etc."></textarea>
+      </div>
+
+      <div>
+        <label for="archivo">CV o foto (opcional)</label>
+        <input type="file" id="archivo" name="archivo" accept=".pdf,.jpg,.jpeg,.png" />
+        <p class="ayuda">Si no tienes un CV formal, puedes adjuntar una foto o dejarlo en blanco.</p>
+      </div>
+
+      <button type="submit" class="boton">Enviar aplicación</button>
+    </form>
+  </main>
+
+  <footer class="sitio">
+    &copy; <span id="anio"></span> Delicias de León. Todos los derechos reservados.
+  </footer>
+  <script>document.getElementById("anio").textContent = new Date().getFullYear();</script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const puestoParam = params.get("puesto");
+    if (puestoParam) {
+      const puestoInput = document.getElementById("puesto");
+      puestoInput.value = puestoParam;
+      const info = document.getElementById("puesto-info");
+      info.style.display = "block";
+      info.textContent = `Estás aplicando a: ${puestoParam}`;
+    }
+  </script>
+</body>
+</html>

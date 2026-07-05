@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vacantes disponibles | Delicias de León</title>
+  <meta name="description" content="Consulta las vacantes disponibles en Delicias de León y aplica en línea." />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header class="sitio">
+    <img src="img/logo.png" alt="Delicias de León" />
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="vacantes.html">Vacantes</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Vacantes disponibles</h1>
+    <div id="lista-vacantes">
+      <p class="estado-msg">Cargando vacantes...</p>
+    </div>
+  </main>
+
+  <footer class="sitio">
+    &copy; <span id="anio"></span> Delicias de León. Todos los derechos reservados.
+  </footer>
+  <script>document.getElementById("anio").textContent = new Date().getFullYear();</script>
+  <script src="js/vacantes-data.js"></script>
+  <script src="js/vacantes.js"></script>
+</body>
+</html>

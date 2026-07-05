@@ -1,0 +1,202 @@
+:root {
+  --negro: #1a1512;
+  --negro-suave: #262019;
+  --dorado: #f2b90f;
+  --naranja: #e07a1f;
+  --blanco: #fdfaf3;
+  --gris: #8a8378;
+  --exito: #3a8f4a;
+  --error: #c0392b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--negro);
+  color: var(--blanco);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--dorado);
+}
+
+header.sitio {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--negro-suave);
+  border-bottom: 3px solid var(--dorado);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header.sitio img {
+  height: 56px;
+  width: auto;
+}
+
+header.sitio nav {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header.sitio nav a {
+  text-decoration: none;
+  color: var(--blanco);
+  font-weight: 600;
+}
+
+header.sitio nav a:hover {
+  color: var(--dorado);
+}
+
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--dorado);
+}
+
+.hero p {
+  color: var(--gris);
+  max-width: 520px;
+  margin: 0 auto 1.5rem;
+}
+
+.boton {
+  display: inline-block;
+  background: linear-gradient(180deg, var(--dorado), var(--naranja));
+  color: var(--negro);
+  font-weight: 700;
+  padding: 0.85rem 1.75rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.boton:hover {
+  filter: brightness(1.08);
+}
+
+.boton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.vacante-card {
+  background: var(--negro-suave);
+  border: 1px solid #3a3226;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.vacante-card h2 {
+  margin: 0 0 0.25rem;
+  color: var(--dorado);
+  font-size: 1.25rem;
+}
+
+.vacante-card .meta {
+  color: var(--gris);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.vacante-card .tag {
+  display: inline-block;
+  background: #33291a;
+  color: var(--naranja);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.78rem;
+  margin-right: 0.4rem;
+}
+
+.estado-msg {
+  text-align: center;
+  color: var(--gris);
+  padding: 2rem 0;
+}
+
+form.aplicacion {
+  background: var(--negro-suave);
+  border-radius: 12px;
+  padding: 1.75rem;
+  display: grid;
+  gap: 1.1rem;
+}
+
+form.aplicacion label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+form.aplicacion input,
+form.aplicacion select,
+form.aplicacion textarea {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #4a4131;
+  background: var(--negro);
+  color: var(--blanco);
+  font-size: 1rem;
+}
+
+form.aplicacion textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+form.aplicacion .ayuda {
+  color: var(--gris);
+  font-size: 0.82rem;
+  margin-top: 0.3rem;
+}
+
+.mensaje-envio {
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.mensaje-envio.exito {
+  background: rgba(58, 143, 74, 0.15);
+  border: 1px solid var(--exito);
+  color: #7fd996;
+}
+
+.mensaje-envio.error {
+  background: rgba(192, 57, 43, 0.15);
+  border: 1px solid var(--error);
+  color: #f0a89f;
+}
+
+footer.sitio {
+  text-align: center;
+  color: var(--gris);
+  font-size: 0.85rem;
+  padding: 2rem 1rem;
+}
