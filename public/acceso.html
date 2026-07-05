@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ver vacantes | Delicias de León</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <header class="sitio">
+    <img src="img/logo.png" alt="Delicias de León" />
+    <nav>
+      <a href="index.html">Inicio</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Antes de ver las vacantes</h1>
+    <p class="estado-msg" style="padding:0 0 1rem;">Para evitar accesos de curiosos, pedimos estos datos antes de mostrar las vacantes disponibles.</p>
+
+    <!-- Formulario procesado por Netlify Forms (sin backend propio). -->
+    <form
+      class="aplicacion"
+      name="acceso-vacantes"
+      method="POST"
+      action="/vacantes.html?verificado=1"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="acceso-vacantes" />
+      <p style="display:none;">
+        <label>No llenar este campo: <input name="bot-field" /></label>
+      </p>
+
+      <div>
+        <label for="nombre">Nombre completo *</label>
+        <input type="text" id="nombre" name="nombre" required />
+      </div>
+
+      <div>
+        <label for="cedula">Número de cédula *</label>
+        <input type="text" id="cedula" name="cedula" placeholder="000-0000000-0" required />
+      </div>
+
+      <button type="submit" class="boton">Ver vacantes disponibles</button>
+    </form>
+  </main>
+
+  <footer class="sitio">
+    &copy; <span id="anio"></span> Delicias de León. Todos los derechos reservados.
+  </footer>
+  <script>document.getElementById("anio").textContent = new Date().getFullYear();</script>
+</body>
+</html>

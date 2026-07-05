@@ -6,6 +6,18 @@
   <title>Vacantes disponibles | Delicias de León</title>
   <meta name="description" content="Consulta las vacantes disponibles en Delicias de León y aplica en línea." />
   <link rel="stylesheet" href="css/estilos.css" />
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      if (params.get("verificado") === "1") {
+        sessionStorage.setItem("vacantesAcceso", "1");
+        window.history.replaceState({}, "", window.location.pathname);
+      }
+      if (sessionStorage.getItem("vacantesAcceso") !== "1") {
+        window.location.replace("acceso.html");
+      }
+    })();
+  </script>
 </head>
 <body>
   <header class="sitio">
