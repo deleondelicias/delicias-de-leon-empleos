@@ -44,4 +44,12 @@ const VACANTES = [
       "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), un día libre a la semana. Incluye entregas a domicilio (delivery) y apoyo en la elaboración de empanadas. Pago: RD$11,470.",
     requisitos: "Licencia de conducir motocicleta vigente y experiencia manejando.",
   },
+  {
+    puesto: "Producción de Cocina (5 horas)",
+    tipo: "Operativo",
+    ubicacion: "Local de producción",
+    descripcion:
+      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), día libre variable (rotativo) a la semana. Tareas como preparación de yuca, carnes, jugos y limpieza del área de producción. Pago: RD$11,470.",
+    requisitos: "Disponibilidad de horario indicado (incluye día libre rotativo).",
+  },
 ];
