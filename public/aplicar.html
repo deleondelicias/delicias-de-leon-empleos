@@ -21,9 +21,8 @@
 
     <!--
       Formulario procesado por Netlify Forms (sin backend propio).
-      Netlify detecta este formulario en el build por su atributo name + data-netlify.
-      Cada envío dispara la función netlify/functions/submission-created.js,
-      que crea el registro en Airtable.
+      Netlify detecta este formulario en el build por su atributo name + data-netlify,
+      y las respuestas quedan disponibles en la pestaña "Forms" del panel de Netlify.
     -->
     <form
       class="aplicacion"
@@ -47,6 +46,11 @@
       <div>
         <label for="telefono">Teléfono *</label>
         <input type="tel" id="telefono" name="telefono" required />
+      </div>
+
+      <div>
+        <label for="residencia">Lugar de residencia actual *</label>
+        <input type="text" id="residencia" name="residencia" placeholder="Ej. Baní, sector Los Amigos" required />
       </div>
 
       <div>
