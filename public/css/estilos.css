@@ -81,6 +81,18 @@ main {
   margin: 0 auto 1.5rem;
 }
 
+.ubicacion-destacada {
+  display: inline-block;
+  color: var(--negro) !important;
+  background: linear-gradient(180deg, var(--dorado), var(--naranja));
+  font-size: 1.4rem;
+  font-weight: 800;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  margin: 0 auto 1.25rem;
+  max-width: none;
+}
+
 .boton {
   display: inline-block;
   background: linear-gradient(180deg, var(--dorado), var(--naranja));
