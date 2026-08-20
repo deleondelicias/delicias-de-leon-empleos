@@ -5,38 +5,6 @@
 
 const VACANTES = [
   {
-    puesto: "Venta y Servicio al Cliente (Turno Mañana)",
-    tipo: "Operativo",
-    ubicacion: "Punto de venta",
-    descripcion:
-      "Horario de 6:40 a.m. a 2:00 p.m. (sábados hasta las 2:30 p.m., domingos hasta las 3:00 p.m.). Un día libre a la semana. Pago: RD$17,702 mensual.",
-    requisitos: "Disponibilidad de horario indicado, buena actitud de servicio al cliente.",
-  },
-  {
-    puesto: "Cocina y Empanadas (Turno Mañana)",
-    tipo: "Operativo",
-    ubicacion: "Local de producción",
-    descripcion:
-      "Horario de 6:40 a.m. a 2:00 p.m. (sábados hasta las 2:30 p.m., domingos hasta las 3:00 p.m.). Un día libre a la semana. Freído y elaboración de empanadas. Pago: RD$17,702 mensual.",
-    requisitos: "Disponibilidad de horario indicado.",
-  },
-  {
-    puesto: "Venta y Servicio al Cliente (Turno Tarde - 5 horas)",
-    tipo: "Operativo",
-    ubicacion: "Punto de venta",
-    descripcion:
-      "Horario de 2:00 p.m. a 7:00 p.m., librando los domingos. Pago: RD$11,470 mensual.",
-    requisitos: "Disponibilidad de horario indicado, buena actitud de servicio al cliente.",
-  },
-  {
-    puesto: "Cocina y Empanadas (Turno Tarde - 5 horas)",
-    tipo: "Operativo",
-    ubicacion: "Local de producción",
-    descripcion:
-      "Horario de 2:00 p.m. a 7:00 p.m., librando los domingos. Freído y elaboración de empanadas. Pago: RD$11,470 mensual.",
-    requisitos: "Disponibilidad de horario indicado.",
-  },
-  {
     puesto: "Repartidor en Motocicleta (Delivery - 5 horas)",
     tipo: "Operativo",
     ubicacion: "Punto de venta",
@@ -45,11 +13,11 @@ const VACANTES = [
     requisitos: "Licencia de conducir motocicleta vigente y experiencia manejando.",
   },
   {
-    puesto: "Producción de Cocina (5 horas)",
+    puesto: "Venta y Servicio al Cliente (5 horas)",
     tipo: "Operativo",
-    ubicacion: "Local de producción",
+    ubicacion: "Punto de venta",
     descripcion:
-      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), día libre variable (rotativo) a la semana. Tareas como preparación de yuca, carnes, jugos y limpieza del área de producción. Pago: RD$11,470 mensual.",
-    requisitos: "Disponibilidad de horario indicado (incluye día libre rotativo).",
+      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), un día libre a la semana. Pago: RD$11,470 mensual.",
+    requisitos: "Disponibilidad de horario indicado, buena actitud de servicio al cliente.",
   },
 ];
