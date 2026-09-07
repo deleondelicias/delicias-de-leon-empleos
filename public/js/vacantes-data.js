@@ -17,7 +17,7 @@ const VACANTES = [
     tipo: "Operativo",
     ubicacion: "Local de producción",
     descripcion:
-      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), un día libre a la semana. Apoyo en la elaboración de empanadas y tareas de cocina. Pago: RD$11,470 mensual.",
+      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), un día libre a la semana. Elaboración y freído de empanadas, y limpieza del área de cocina. Pago: RD$11,470 mensual.",
     requisitos: "Disponibilidad de horario indicado.",
   },
 ];
