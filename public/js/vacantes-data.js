@@ -13,11 +13,11 @@ const VACANTES = [
     requisitos: "Licencia de conducir motocicleta vigente y experiencia manejando.",
   },
   {
-    puesto: "Venta y Servicio al Cliente (5 horas)",
+    puesto: "Producción de Cocina (5 horas)",
     tipo: "Operativo",
-    ubicacion: "Punto de venta",
+    ubicacion: "Local de producción",
     descripcion:
-      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), un día libre a la semana. Pago: RD$11,470 mensual.",
-    requisitos: "Disponibilidad de horario indicado, buena actitud de servicio al cliente.",
+      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), día libre variable (rotativo) a la semana. Tareas como preparación de yuca, carnes, jugos y limpieza del área de producción. Pago: RD$11,470 mensual.",
+    requisitos: "Disponibilidad de horario indicado (incluye día libre rotativo).",
   },
 ];
