@@ -5,11 +5,11 @@
 
 const VACANTES = [
   {
-    puesto: "Repartidor en Motocicleta (Delivery - 5 horas)",
+    puesto: "Repartidor en Motocicleta y Producción de Alimentos (5 horas)",
     tipo: "Operativo",
-    ubicacion: "Punto de venta",
+    ubicacion: "Punto de venta y local de producción",
     descripcion:
-      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), un día libre a la semana. Incluye entregas a domicilio (delivery) y apoyo en la elaboración de empanadas. Pago: RD$11,470 mensual.",
+      "Horario de 7:00 a.m. a 12:00 p.m. (5 horas), un día libre a la semana. Dos funciones en un mismo puesto: entregas a domicilio (delivery) y producción de alimentos (elaboración de empanadas). Pago: RD$11,470 mensual.",
     requisitos: "Licencia de conducir motocicleta vigente y experiencia manejando.",
   },
   {
