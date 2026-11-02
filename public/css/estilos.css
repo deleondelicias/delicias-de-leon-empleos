@@ -103,6 +103,15 @@ main {
   margin-bottom: 1rem;
 }
 
+.local-ubicacion {
+  margin-bottom: 2.5rem;
+}
+
+.local-ubicacion h3 {
+  color: var(--naranja);
+  margin-bottom: 0.75rem;
+}
+
 .mapa-contenedor {
   border-radius: 12px;
   overflow: hidden;
